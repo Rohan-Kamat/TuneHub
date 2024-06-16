@@ -28,7 +28,7 @@ export default function Card({
             console.log(inView, isLoaded)
             setIsLoaded(true);
             lottie.loadAnimation({
-                container: document.getElementById(`lottie-${id}`),
+                container: document.getElementById(`lottie-${id}`)!,
                 renderer: 'svg',
                 loop: true,
                 autoplay: true,
